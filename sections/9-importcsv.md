@@ -2,7 +2,7 @@
 
 # Import data into table  
 
-Let's create a database table from an existing csv file.
+Let's create a database table from an [existing csv file](https://github.com/GCDigitalFellows/nypl_data/blob/master/nypl_items.csv).
 
 1. Create a table with a field for each column in the csv file that we want to import
 
