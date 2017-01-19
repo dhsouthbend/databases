@@ -34,7 +34,7 @@ import sqlite3
 conn = sqlite3.connect('nypldb.db')
 
 # create a cursor object  
-c = conn.cursor()
+cur = conn.cursor()
 ```  
 
 3\. Replace pseudocode with working Python and SQL
