@@ -16,7 +16,7 @@ Things to consider:
 ## Solution 
 **Step 1:** Create a new table for GPAs
 ```sql
-INSERT TABLE gpas (
+CREATE TABLE gpas (
 	id INTEGER PRIMARY KEY,
 	gpa DOUBLE PRECISION,
 	id_student INTEGER,
