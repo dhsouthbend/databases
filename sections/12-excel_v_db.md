@@ -13,9 +13,9 @@
 3. ##### Working with multiple related data sets  
 	- Is anyone not doing this???  
 
-4. #####Asking detailed questions about your data  
+4. ##### Asking detailed questions about your data  
 
-5. #####Connecting your data  
+5. ##### Connecting your data  
 	- Databases are ready to plug into other applications  
 
 
