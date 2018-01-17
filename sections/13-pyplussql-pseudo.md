@@ -6,7 +6,7 @@ You can create a program to interact with a database by embedding SQL syntax in 
 
 Let's write a short program that asks a user for a place name and returns all records from the database that contain the value in the "place" field.  
 
-0\. Using a text editor, create a file called "nypl_search.py" in the directory where the "nypldb.db" database is located.
+0\. Using a text editor, create a file called "nypl_search.py" in the directory where the database containing the "nypl_items" table is located.
 
 1\. Write some pseudocode in "nypl_search.py" that describes what our code will do once it's finished:
 
