@@ -1,6 +1,6 @@
-#SQLite “cheat sheet”
+# SQLite “cheat sheet”
 
-##Tips!
+## Tips!
 1. SQL is not case sensitive
 2. End each SQL statement with a semicolon “;”
 3. Use “*” to select an entire record
@@ -10,9 +10,9 @@
 7. Use parentheses to force order of operations
 8. Use two hyphens “--” to comment 
 
-##C.R.U.D.
+## C.R.U.D.
 
-###Create
+### Create
 1. `CREATE DATABASE db_name` - creates a database
 
 2. `CREATE TABLE table_name (field_name DATA_TYPE CONSTRAINTS)` - creates a table in the database
@@ -39,8 +39,8 @@
 4. `INSERT INTO table_name(field1) VALUES (record1), (record2), (record3)` - insert data into a table for multiple records
 
 
-###Read
-####This is the basic format for querying a database
+### Read
+#### This is the basic format for querying a database
 
 1. `SELECT field1, field2` - select fields to return (or `*` to return entire record)
 
@@ -73,7 +73,7 @@
 6. `ORDER BY field_a ASC/DESC` - format how results are displayed - arrange records returned by values in *field_a* according to ascending order (`DESC` for descending order)
 
 
-####Misc.
+#### Misc.
 1. `SELECT DISTINCT field_a FROM table` - return only distinct values for *field_a*
 
 2. `SELECT COUNT(*) FROM table` - return the number of records in the table
@@ -81,7 +81,7 @@
 3. `SELECT * FROM table LIMIT 5` - return only the first 5 records from the table
 
 
-###Update
+### Update
 1. `ALTER TABLE table_name RENAME TO new_table_name` - rename a table
 
 2. `ALTER TABLE table_name ADD COLUMN new_field_name DATA_TYPE CONSTRAINTS` - add a new field to a table (include data type and field constraints)
@@ -89,7 +89,7 @@
 3. `UPDATE table SET field_a = value_x WHERE field_b = value_y` - add new data to one or more fields in a table
 
 
-###Delete
+### Delete
 1. `DELETE FROM table WHERE field = value` - delete data from a table
 
 2. `DROP TABLE table_name` - delete a whole table
