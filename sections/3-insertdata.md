@@ -2,20 +2,15 @@
 
 # Inserting data into an SQL table
 
-Now that we have a table structure, we need to insert some data.  
+Now that we have a table structure, we need to insert some data. We need to create a new file for our next steps. Call it "databases.py".
 
-The syntax for inserting multiple records is: 
+The syntax for inserting multiple records is:
 
 ```sql
 INSERT INTO table_name (field_name) VALUES (record1), (record2), (record3)
 ```
 
-1. Insert "Anthropology", "Biology", and "Linguistics" into the table we just created. 
-
-    **Remember:**
-	
-	- Highlight this code before clicking the triangle to execute!  
-	- Comment your code with `--`
+Insert "Anthropology", "Biology", and "Linguistics" into the table we just created. Here is the SQL we need:
 
 ```sql
 INSERT INTO programs (program_name) VALUES
@@ -24,8 +19,23 @@ INSERT INTO programs (program_name) VALUES
 ("Linguistics");
 ```
 
-2. Click on "Data" to view the data that you just inserted into the "programs" table.  
+In "databases.py", add these lines:
 
-	![Click "Data" to view "programs" table with new data](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/view_table.png)  
-	
+```python
+# import sqlite library
+import sqlite3
+
+"""Make a connection to the 'firstdb.db' database."""
+conn = sqlite3.connect("firstdb.db")
+cursor = conn.cursor()
+
+# insert multiple values into our 'programs' table
+cursor.execute("""INSERT INTO programs (program_name) VALUES
+("Anthropology"),
+("Biology"),
+("Linguistics")
+)""")
+```
+
+
 [<<< Back](2-buildtable.md) - [Next >>>](4-updatefield.md)

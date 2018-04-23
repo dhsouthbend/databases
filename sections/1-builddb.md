@@ -4,7 +4,7 @@
 
 To get started, we're going to use the sqlite library to create the database file we will be using during this session. (We will also use the same file in a later session on web frameworks.)
 
-1. Create a new file, called "databases.py". Write some pseudocode that describes what our code will do once it's finished:
+1. Create a new file, called "createdb.py". Write some pseudocode that describes what our code will do once it's finished:
 
 ```Python
 # import sqlite3 library
@@ -22,12 +22,12 @@ import sqlite3
 conn = sqlite3.connect("firstdb.db")
 ```
 
-3. Run the program. First, open the command line, cd to the directory containing your "databases.py" file and "firstdb.db" database. Then type
+3. Run the program. First, open the command line, cd to the directory containing your "createdb.py" file and "firstdb.db" database. Then type
 
 ```Python
-python databases.py
+python createdb.py
 ```
-and hit Enter.
+and hit Enter. Now check your directory to see whether "firstdb.db" has been created.
 
 Congratulations! You've successfully created and accessed your database using a Python script. This is an excellent first step in performing data analysis on large data sets or creating your own applications!
 
