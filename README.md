@@ -17,11 +17,6 @@ A database is a collection of data that is structured to allow for manipulation.
 [Databases vs. Excel](sections/12-excel_v_db.md)
 [SQL + Python = Awesome!](sections/13-pyplussql-pseudo.md)
 
-### Requirements
-
-[SQLite](https://www.sqlite.org/) (already present on OSX)
-[SQLiteStudio](http://sqlitestudio.pl/)
-
 ### Additional Resources
 
 [Fun Times with SQLite!](https://digitalfellows.commons.gc.cuny.edu/2016/04/08/fun-times-with-sqlite-or-a-beginners-tutorial-to-data-management-and-databases-with-sql/)

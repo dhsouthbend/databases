@@ -1,8 +1,20 @@
 [<<< Back](6-buildtable_challenge.md) - [Next >>>](8-innerjoin.md)  
 
-#Querying your database  
+# Querying your database  
 
-Now that we have a decent looking database, we can execute some queries to manipulate our data.  
+Now that we have a decent looking database, we can execute some queries to manipulate our data. For this section, we will be using the Python REPL. At the command line, navigate to the directory where you are keeping the "firstdb.db" database, and type:
+
+```
+python
+```
+
+When you are in the REPL, type:
+
+```python
+import createdb
+```
+
+This imports the file we wrote at the beginning of this workshop, which connects us to our database. So, now we can play around with querying our data.
 
 Each query is made up of the same basic set of clauses:  
 - The `SELECT` clause indicates the fields that you want to return.  
@@ -14,27 +26,27 @@ Together, these clauses create a new temporary table based on the criteria speci
 Practice executing these queries and see what they return.  
 
 1. This query returns all of the records (i.e., rows) in the "students" table:  
-	```sql
-	--SHOW ALL FIELDS FOR EACH RECORD IN THE TABLE STUDENTS
-	SELECT *   
-	FROM students;
-	```  
+```python
+# query all fields for each record in the table "students"
+cursor.execute("SELECT * FROM students")
+# print results
+print(cursor.fetchall())
+```  
 
 2. This query returns only the values in the "student" field for all records in the "students" table:  
-	```sql
-	--SHOW THE VALUE FOR ONLY THE STUDENT FIELD FOR ALL RECORDS IN THE
-	--TABLE STUDENTS
-	SELECT student
-	FROM students;
-	```  
+```python
+cursor.execute("SELECT student FROM students")
+# print results
+print(cursor.fetchall())
+```  
 
 3. This query returns two fields from the "students" table:  
-	```sql
-	--SHOW THE VALUES FOR THE STUDENT AND ID FIELDS FOR ALL THE RECORDS IN
-	--THE TABLE STUDENTS
-	SELECT student, id
-	FROM students;
-	```  
+```python
+cursor.execute("""SELECT student, id
+FROM students""")
+# print results
+print(cursor.fetchall())
+```  
 
 ### Challenge
 
@@ -43,19 +55,23 @@ Write a query that returns "program_name" and "program_level" for each record in
 
 ### Solution
 
-```sql
-SELECT program_name, program_level
-FROM programs;
+```python
+cursor.execute("""SELECT program_name, program_level
+FROM programs""")
+# print results
+print(cursor.fetchall())
 ```
 
 4. In this query, `WHERE` filters the records by their value in the "id" field:  
 
-```sql
---SHOW ALL FIELDS FOR EACH RECORD IN THE TABLE STUDENTS WHERE THE VALUE OF THE
---ID FIELD IS EQUAL TO "3"
-SELECT *
+```python
+"""show all fields for each record in the table 'students' where the value of the
+'id' field is equal to '3'"""
+cursor.execute("""SELECT *
 FROM students
-WHERE id = '3';
+WHERE id = '3'""")
+# print results
+print(cursor.fetchall())
 ```
 
 ### Challenge

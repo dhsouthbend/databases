@@ -2,7 +2,7 @@
 
 # Inserting data into an SQL table
 
-Now that we have a table structure, we need to insert some data. We need to create a new file for our next steps. Call it "databases.py".
+Now that we have a table structure, we can insert some data. We need to create a new file for our next steps. Call it "insert.py".
 
 The syntax for inserting multiple records is:
 
@@ -19,7 +19,7 @@ INSERT INTO programs (program_name) VALUES
 ("Linguistics");
 ```
 
-In "databases.py", add these lines:
+In "insert.py", add these lines:
 
 ```python
 # import sqlite library
@@ -35,7 +35,12 @@ cursor.execute("""INSERT INTO programs (program_name) VALUES
 ("Biology"),
 ("Linguistics")
 )""")
+
+# print out our table
+cursor.execute("SELECT * FROM programs")
+print(cursor.fetchall())
 ```
 
+Run "insert.py". If you see the programs we added to the database, it worked!
 
 [<<< Back](2-buildtable.md) - [Next >>>](4-updatefield.md)

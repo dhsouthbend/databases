@@ -14,8 +14,18 @@ CREATE TABLE table_name ( field_name data_type constraints )
 
 - The [constraints](http://www.tutorialspoint.com/sqlite/sqlite_constraints.htm) will affect the behavior of that field. For example, a field with a `NOT NULL` constraint means that each record must have some data in this field.
 
+2. Create a new file and call it "buildtable.py". Add these line to connect to the database, as before.
 
-2. Create a table to store data about academic programs. Name the table "programs" and give it two fields (aka, columns): one for "id", the other for "program_name".
+```python
+# import sqlite library
+import sqlite3
+
+"""create a database and make a connection. This command will create a new database if it doesn't already exist."""
+conn = sqlite3.connect("firstdb.db")
+cursor = conn.cursor()
+```
+
+3. Create a table to store data about academic programs. Name the table "programs" and give it two fields (aka, columns): one for "id", the other for "program_name".
 
 First let's write the SQL we need:
 
@@ -35,16 +45,7 @@ conn.execute("""CREATE TABLE programs  (
 )""")
 ```
 
-And we add that function to our "createdb.py" file:
-
-```python
-conn.execute("""CREATE TABLE programs  (
-    id INTEGER PRIMARY KEY,
-    program_name VARCHAR
-)""")
-```
-
-So now our script looks like this:
+And we add that function to our "buildtable.py" file, so now our script looks like this:
 
 ```python
 # import sqlite library

@@ -4,18 +4,20 @@
 
 Each of the queries up to now has just returned data from a single table in the database. This final query combines our "students" and "programs" tables using the `INNER JOIN` and `ON` clause:
 
-```sql
--- SHOW ALL THE RECORDS FOR STUDENTS WITH 
--- INFORMATION ABOUT THEIR RESPECTIVE PROGRAMS
-
-SELECT *
+```python
+""""""Show all the records for students with
+information about their respective programs"""
+cursor.execute("""SELECT *
 FROM students INNER JOIN programs
-ON students.id_program = programs.id;
+ON students.id_program = programs.id""")
+
+# print results
+print(cursor.fetchall())
 ```
 
 This query should return what you see below:
 
-![Result of a query joining the "students" and "programs" tables](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/join_table.png)  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add result
 
 This query demonstrates the power of relational databases by using the foreign key in the "students" table to coordinating data with the "programs" table.  
 
