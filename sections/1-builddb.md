@@ -1,19 +1,34 @@
-[<<< Back](0-dbintro.md) - [Next >>>](2-buildtable.md)  
+[<<< Back](0-dbintro.md) - [Next >>>](2-buildtable.md)
 
 # Building a database
 
-To get started, we're going to use the SQLiteStudio GUI to create the database file we will be using during this session. (We will also use the same file in a later session on web frameworks.)
+To get started, we're going to use the sqlite library to create the database file we will be using during this session. (We will also use the same file in a later session on web frameworks.)
 
-1. Create a database file using the SQLite GUI by clicking Databases > Add a Database from the file menu:
+1. Create a new file, called "databases.py". Write some pseudocode that describes what our code will do once it's finished:
 
-	![Create a database using SQLite GUI](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/add_db.png)  
+```Python
+# import sqlite3 library
 
-2. Give your database a name and make sure to save it to a directory that is outside of the SQLiteStudio download folder.  
+# create and connect to the database
+```
 
-	![Name your database file and save it outside of the SQLiteStudio download folder](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/db_info.png)  
+2. Import the sqlite3 library, connect to the database, and create a cursor object. (Don't worry about this last part!)
 
-3. Connect to the database you just created. First click the database in the left pane to highlight it, then select Databases > Connect to the Database from the file menu:
+```Python
+# import sqlite library
+import sqlite3
 
-	![Connect to the database you just created](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/conn_db.png)  
+"""create a database and make a connection. This command will create a new database if it doesn't already exist."""
+conn = sqlite3.connect("firstdb.db")
+```
 
-[<<< Back](0-dbintro.md) - [Next >>>](2-buildtable.md)  
+3. Run the program. First, open the command line, cd to the directory containing your "databases.py" file and "firstdb.db" database. Then type
+
+```Python
+python databases.py
+```
+and hit Enter.
+
+Congratulations! You've successfully created and accessed your database using a Python script. This is an excellent first step in performing data analysis on large data sets or creating your own applications!
+
+[<<< Back](0-dbintro.md) - [Next >>>](2-buildtable.md)

@@ -1,10 +1,10 @@
-[<<< Back](../README.md) - [Next >>>](1-builddb.md)  
+[<<< Back](../README.md) - [Next >>>](1-builddb.md)
 
-# Introduction to databases  
+# Introduction to databases
 
 ### What is a database?
 
-A database is a collection of data that is structured to allow for manipulation. There are different kinds of databases—one kind is a relational database. In a relational database, the data is contained in different tables. 
+A database is a collection of data that is structured to allow for manipulation. There are different kinds of databases—one kind is a relational database. In a relational database, the data is contained in different tables.
 
 ### What is SQL?
 
@@ -14,6 +14,6 @@ We’re going to use SQLite in this session because getting set up requires less
 
 ### How do I use SQL?
 
-The database holds your data, but you need a client to see and interact with that data. There are a few options for SQLite GUI database managers. We will be using [SQLiteStudio](http://sqlitestudio.pl/). SQLite also has a [command-line utility](http://www.sqlite.org/cli.html), which we will not use today.
+The database holds your data, but you need some way to interact with the database. We will be using a few Python libraries to do this. SQLite also has a [command-line utility](http://www.sqlite.org/cli.html), which we will not use today.
 
 [<<< Back](../README.md) - [Next >>>](1-builddb.md)
