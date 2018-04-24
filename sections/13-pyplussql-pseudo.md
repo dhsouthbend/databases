@@ -2,9 +2,7 @@
 
 # SQL + Python = Awesome!
 
-You can create a program to interact with a database by embedding SQL syntax in a Python script (using the sqlite3 library, which comes standard with every Python install)
-
-Let's write a short program that asks a user for a place name and returns all records from the database that contain the value in the "place" field.  
+Let's write a short program that asks a user for a place name and returns all records from the database that contain the value in the "place" field.
 
 0\. Using a text editor, create a file called "nypl_search.py" in the directory where the database containing the "nypl_items" table is located.
 
@@ -24,7 +22,7 @@ Let's write a short program that asks a user for a place name and returns all re
 # return a list of records from the database that are from the place name
 ```
 
-2\. Import the sqlite3 library, connect to the database, and create a cursor object. (Don't worry about this last part!)
+2\. Import the sqlite3 library, connect to the database, and create a cursor object.
 
 ```Python
 # import sqlite3 library
@@ -33,9 +31,9 @@ import sqlite3
 # connect to the database
 conn = sqlite3.connect('nypldb.db')
 
-# create a cursor object  
+# create a cursor object
 cur = conn.cursor()
-```  
+```
 
 3\. Replace pseudocode with working Python and SQL
 
@@ -54,14 +52,12 @@ record_list = cur.fetchall()
 
 for i in record_list:
 	print("\n\n", i)
-``` 
+```
 
-4\. Run the program. First, open the command line, `cd` to the directory containing your "nypl_search.py" file and "nypldb.db" database. Then type 
+4\. Run the program. First, open the command line, `cd` to the directory containing your "nypl_search.py" file and "nypldb.db" database. Then type
 
     python nypl_search.py
-	
-and hit Enter. You'll be prompted to enter a place name, which is case-sensitive. Try "Paris" or some other location, and you should see output from the database returned to you.
 
-Congratulations! You've successfully accessed your database using a Python script. This is an excellent first step in performing data analysis on large data sets or creating your own applications!
+and hit Enter. You'll be prompted to enter a place name, which is case-sensitive. Try "Paris" or some other location, and you should see output from the database returned to you.
 
 [<<< Back](12-excel_v_db.md) - [Back to top >>>](../README.md)

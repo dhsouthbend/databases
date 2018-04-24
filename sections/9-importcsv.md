@@ -1,34 +1,26 @@
 [<<< Back](8-innerjoin.md) - [Next >>>](10-usefulqueries.md)
 
-# Import data into table  
+# Import data into table
 
 Let's create a database table from an [existing csv file](https://github.com/GCDigitalFellows/nypl_data/blob/master/nypl_items.csv).
 
-1. Create a table with a field for each column in the csv file that we want to import
+We're going to cheat a bit by using the Pandas library to import our data.
 
-	```sql
-	CREATE TABLE nypl_items (
-		id INTEGER PRIMARY KEY,
-		title VARCHAR,
-		contributor VARCHAR,
-		year VARCHAR,
-		language VARCHAR,
-		description VARCHAR,
-		note VARCHAR,
-		subject VARCHAR,
-		resource VARCHAR,
-		genre VARCHAR,
-		publisher VARCHAR,
-		place VARCHAR,
-		url VARCHAR
-	);
-	```
+```python
+import pandas
+import sqlite3
 
+# make the connection
+conn = sqlite3.connect('db.sqlite')
 
-2. Double click on the table "nypl_items" in the databases window and click on the import icon  
+# have Pandas read our CSV
+df = pandas.read_csv('nypl_items.csv', low_memory=False)
 
-![Importing a csv file to a new table](https://github.com/GCDigitalFellows/GCDRI_databases/blob/master/images/csv_import.png)
+# convert our data into a SQlite table called 'nypl_items'
+df.to_sql('nypl_items', conn)
 
-3. Follow import instructions
+# print a list of every record in  the table
+print (pandas.read_sql_query("SELECT * FROM nypl_items", conn))
+```
 
 [<<< Back](8-innerjoin.md) - [Next >>>](10-usefulqueries.md)

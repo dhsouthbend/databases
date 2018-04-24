@@ -2,7 +2,7 @@
 
 # Updating fields
 
-Another step, another file to work on. Create "update.py".
+Another step, another file to work on. Create "**update.py**".
 
 You can alter tables after they've been created. The SQL syntax below adds another field to the existing table and then populates that field with data.
 
@@ -29,6 +29,7 @@ sql = """ALTER TABLE programs
 	ADD program_level VARCHAR"""
 cursor.execute(sql)
 
+# commit the changes
 conn.commit()
 ```
 

@@ -2,7 +2,7 @@
 
 # Relating tables with foreign keys
 
-At this point, we're going to create a second table called "students" to illustrate the relational nature of relational databases. We use the same syntax that we used to create the "programs" table, but with one extra element: **a foreign key**. Let's work in a new file that we call "students.py".
+At this point, we're going to create a second table called "students" to illustrate the relational nature of relational databases. We use the same syntax that we used to create the "programs" table, but with one extra element: **a foreign key**. Let's work in a new file that we call "**students.py**".
 
 1. As before, create a connection to the "firstdb.db" database.
 
