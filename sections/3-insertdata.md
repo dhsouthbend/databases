@@ -1,4 +1,4 @@
-[<<< Back](2-buildtable.md) - [Next >>>](4-updatefield.md)
+[<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
 
 # Inserting data into an SQL table
 
@@ -36,6 +36,8 @@ cursor.execute("""INSERT INTO programs (program_name) VALUES
 ("Linguistics")
 )""")
 
+conn.commit()
+
 # print out our table
 cursor.execute("SELECT * FROM programs")
 print(cursor.fetchall())
@@ -43,4 +45,5 @@ print(cursor.fetchall())
 
 Run "insert.py". If you see the programs we added to the database, it worked!
 
-[<<< Back](2-buildtable.md) - [Next >>>](4-updatefield.md)
+
+[<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)

@@ -1,11 +1,11 @@
-[<<< Back](3-insertdata.md) - [Next >>>](5-foreignkeys.md)
+[<<< Back](3b-pythonic.md) - [Next >>>](5-foreignkeys.md)
 
 # Updating fields
 
-1. Another step, another file to work on. Create "update.py".
+Another step, another file to work on. Create "update.py".
 
 You can alter tables after they've been created. The SQL syntax below adds another field to the existing table and then populates that field with data.
-  
+
 ```sql
 ALTER TABLE programs    --selects the "programs" table to update
 ADD program_level VARCHAR;    --adds a "program_level" column, which is a string
@@ -22,14 +22,17 @@ conn = sqlite3.connect("firstdb.db")
 cursor = conn.cursor()
 ```
 
-2. Add another field for "program_level" to the existing table.	
+2. Add another field for "program_level" to the existing table.
 
 ```python
-cursor.execute("""ALTER TABLE programs
-	ADD program_level VARCHAR""")
+sql = """ALTER TABLE programs
+	ADD program_level VARCHAR"""
+cursor.execute(sql)
+
+conn.commit()
 ```
 
-2. Now, let's populate the new empty "program_level" field with some data. Can you manage with only the SQL? 
+2. Now, let's populate the new empty "program_level" field with some data. Can you manage with only the SQL?
 
 ```sql
 UPDATE programs		--select the table to update
@@ -56,5 +59,5 @@ UPDATE programs
 SET program_level = "Master's"
 WHERE program_name IN ("Anthropology", "Biology");
 ```
-	
-[<<< Back](3-insertdata.md) - [Next >>>](5-foreignkeys.md)
+
+[<<< Back](3b-pythonic.md) - [Next >>>](5-foreignkeys.md)
