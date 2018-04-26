@@ -26,10 +26,11 @@ boardgames = [('Settlers of Catan', 3, 5),
           ('Carcasonne', 1, 10),
           ('Diplomacy', 2, 4),
           ]
+
 cursor.executemany("INSERT INTO albums VALUES (?,?,?)", boardgames)
 conn.commit()
 ```
 
-What might be the advantage of such an approach?
+What might be the advantage of such an approach? XXX Add longer explanation here? XXX
 
 [<<< Back](3-insertdata.md) - [Next >>>](4-updatefield.md)

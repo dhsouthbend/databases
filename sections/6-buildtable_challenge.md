@@ -2,19 +2,18 @@
 
 # Challenge: Build a table for GPA!
 
-Let's imagine that we want to connect each student to their GPA. How can we do this?  
+Let's imagine that we want to connect each student to their GPA. How can we do this?
 
-Things to consider:  
+Things to consider:
 
-- Where will we put the GPAs?  
-
-- What kind data type will they be?  
-
-- How will we connect each GPA to the correct student?  
-
+- Where will we put the GPAs?
+- What kind data type will they be?
+- How will we connect each GPA to the correct student?
 
 ## Solution 
-**Step 1:** Create a new table for GPAs
+
+### Create a New Table For GPAs
+
 ```sql
 CREATE TABLE gpas (
 	id INTEGER PRIMARY KEY,
@@ -24,7 +23,8 @@ CREATE TABLE gpas (
 );
 ```  
 
-**Step 2:** Populate the GPA table with GPA score and foreign key
+### Populate the GPA Table with GPA Score and Foreign Key
+
 ```sql
 INSERT INTO gpas (gpa, id_student) VALUES
 	(2.67, 2),

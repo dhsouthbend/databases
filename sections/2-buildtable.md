@@ -1,8 +1,8 @@
 [<<< Back](1-builddb.md) - [Next >>>](3-insertdata.md)
 
-# Building tables
+# Building Tables
 
-The next step is to create tables to hold your data. From here onwards, we are going to be using Python and SQL together to execute database queries.
+The next step is to create tables to hold your data. From here on, we are going to be using Python and SQL together to execute database queries.
 
 The syntax for creating a table in SQLite is:
 
@@ -10,11 +10,10 @@ The syntax for creating a table in SQLite is:
 CREATE TABLE table_name ( field_name data_type constraints )
 ```
 
-- The [data type](https://www.sqlite.org/datatype3.html) will affect the behavior of the data in that field. For example, whether the data itself is treated as text or a number.
-
+- The [data type](https://www.sqlite.org/datatype3.html) will affect the behavior of the data in that field. For example, whether the data itself is treated as text or a number. 
 - The [constraints](http://www.tutorialspoint.com/sqlite/sqlite_constraints.htm) will affect the behavior of that field. For example, a field with a `NOT NULL` constraint means that each record must have some data in this field.
 
-2. Create a new file and call it "buildtable.py". Add these lines to connect to the database, as before.
+Create a new file and call it `buildtable.py`. Add these lines to connect to the database, as before.
 
 ```python
 # import sqlite library
@@ -29,7 +28,7 @@ cursor = conn.cursor()
 
 Notice that this time we also created a "cursor" object for the database. This allows us to traverse the database records, to search through and change them.
 
-3. Create a table to store data about academic programs. Name the table "programs" and give it two fields (aka, columns): one for "id", the other for "program_name".
+Next, create a table to store data about academic programs. Name the table "programs" and give it two fields (aka, columns): one for `id`, the other for `program_name`.
 
 First let's write the SQL we need:
 
@@ -49,7 +48,7 @@ conn.execute("""CREATE TABLE programs  (
 )""")
 ```
 
-And we add that function to our "buildtable.py" file, so now our script looks like this:
+And we add that function to our `buildtable.py` file, so now our script looks like this:
 
 ```python
 # import sqlite library

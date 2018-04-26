@@ -1,8 +1,8 @@
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
 
-# Inserting data into an SQL table
+# Inserting Data into an SQL Table
 
-Now that we have a table structure, we can insert some data. We need to create a new file for our next steps. Call it "insert.py".
+Now that we have a table structure, we can insert some data. We need to create a new file for our next steps. Call it `insert.py`.
 
 The syntax for inserting multiple records is:
 
@@ -19,7 +19,7 @@ INSERT INTO programs (program_name) VALUES
 ("Linguistics");
 ```
 
-In "insert.py", add these lines:
+In `insert.py`, add these lines:
 
 ```python
 # import sqlite library
@@ -43,7 +43,7 @@ cursor.execute("SELECT * FROM programs")
 print(cursor.fetchall())
 ```
 
-Run "insert.py". If you see the programs we added to the database, it worked!
+Run `insert.py`. If you see the programs we added to the database, it worked!
 
 
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
