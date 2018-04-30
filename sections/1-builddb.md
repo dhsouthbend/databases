@@ -22,7 +22,7 @@ Run the program. First, open the command line, cd to the directory containing yo
 python createdb.py
 ```
 
-and hit Enter. Now check your directory to see whether "firstdb.db" has been created.
+and hit Enter. Now check your directory to see whether "first.db" has been created.
 
 Congratulations! You've successfully created and accessed your database using a Python script. This is an excellent first step in performing data analysis on large data sets or creating your own applications!
 

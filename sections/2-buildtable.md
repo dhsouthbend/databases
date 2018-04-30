@@ -20,7 +20,7 @@ Create a new file and call it `buildtable.py`. Add these lines to connect to the
 import sqlite3
 
 """create a database and make a connection. This command will create a new database if it doesn't already exist."""
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 
 # create a cursor
 cursor = conn.cursor()
@@ -55,7 +55,7 @@ And we add that function to our `buildtable.py` file, so now our script looks li
 import sqlite3
 
 """create a database and make a connection. This command will create a new database if it doesn't already exist."""
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
 # create a table inside our database
@@ -66,7 +66,6 @@ cursor.execute("""CREATE TABLE programs  (
 conn.commit()
 ```
 
-So now WHAT??????
 
 
 [<<< Back](1-builddb.md) - [Next >>>](3-insertdata.md)

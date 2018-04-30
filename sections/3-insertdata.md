@@ -25,16 +25,16 @@ In `insert.py`, add these lines:
 # import sqlite library
 import sqlite3
 
-"""Make a connection to the 'firstdb.db' database."""
-conn = sqlite3.connect("firstdb.db")
+"""Make a connection to the 'first.db' database."""
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
 # insert multiple values into our 'programs' table
 cursor.execute("""INSERT INTO programs (program_name) VALUES
-("Anthropology"),
-("Biology"),
-("Linguistics")
-)""")
+('Anthropology'),
+('Biology'),
+('Linguistics')
+""")
 
 conn.commit()
 

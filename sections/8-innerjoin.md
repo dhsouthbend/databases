@@ -20,7 +20,8 @@ print(cursor.fetchall())
 
 This query should return what you see below:
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add result
+```[(1, 'Josefina', 3, 3, 'Linguistics', 'Ph.D.'), (2, 'Cecilia', 2, 2, 'Biology', "Master's"), (3, 'Nico', 2, 2, 'Biology', "Master's"), (4, 'Sarah', 1, 1, 'Anthropology', "Master's"), (5, 'Josefina', 3, 3, 'Linguistics', 'Ph.D.'), (6, 'Cecilia', 2, 2, 'Biology', "Master's"), (7, 'Nico', 2, 2, 'Biology', "Master's"), (8, 'Sarah', 1, 1, 'Anthropology', "Master's")]```
+
 
 This query demonstrates the power of relational databases by using the foreign key in the "students" table to coordinating data with the "programs" table.
 

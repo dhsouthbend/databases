@@ -2,7 +2,7 @@
 
 # Querying to summarize your data  
 
-Let's see what the nypl_items table looks like:  
+Usibng the REPL, let's see what the nypl_items table looks like:  
 
 1. How many records are in the table?  
 

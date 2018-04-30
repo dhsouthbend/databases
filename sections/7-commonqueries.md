@@ -2,7 +2,7 @@
 
 # Querying your database
 
-Now that we have a decent looking database, we can execute some queries to manipulate our data. For this section, we will be using the Python REPL. At the command line, navigate to the directory where you are keeping the "firstdb.db" database, and type:
+Now that we have a decent looking database, we can execute some queries to manipulate our data. For this section, we will be using the Python REPL. At the command line, navigate to the directory where you are keeping the "first.db" database, and type:
 
 ```
 python
@@ -11,10 +11,12 @@ python
 When you are in the REPL, type:
 
 ```python
-import createdb
+import sqlite3
+conn = sqlite3.connect("first.db")
+cursor = conn.cursor()
 ```
 
-This imports the file we wrote at the beginning of this workshop, which connects us to our database. So, now we can play around with querying our data.
+This connects us to our database. So, now we can play around with querying our data.
 
 Each query is made up of the same basic set of clauses:
 - The `SELECT` clause indicates the fields that you want to return.
@@ -65,7 +67,7 @@ cursor.execute(sql)
 print(cursor.fetchall())
 ```
 
-4. In this query, `WHERE` filters the records by their value in the "id" field:
+In the following query, `WHERE` filters the records by their value in the "id" field:
 
 ```python
 """show all fields for each record in the table 'students' where the value of the
