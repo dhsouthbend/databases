@@ -1,4 +1,4 @@
-[<<< Back](9b-datasets.md) - [Next >>>](10-usefulqueries.md)
+[<<< Back](8-innerjoin.md) - [Next >>>](9b-datasets.md)
 
 # Import data into table
 
@@ -23,4 +23,4 @@ df.to_sql('nypl_items', conn)
 print (pandas.read_sql_query("SELECT * FROM nypl_items", conn))
 ```
 
-[<<< Back](9b-datasets.md) - [Next >>>](10-usefulqueries.md)
+[<<< Back](8-innerjoin.md) - [Next >>>](9b-datasets.md)
