@@ -5,9 +5,9 @@ A database is a collection of data that is structured to allow for manipulation.
 ### Learning Objectives
 
 After completing this session, attendees will be able to: 
-- Create tables
-- insert, read, and delete data in an SQLite database using Python and SQL statements
-- 
+- Create database tables in an SQLite database using Python and SQL statements
+- Insert, read, and delete data 
+- Understand the beginning of cleaning/tidying data
 
 ### Table of Contents
 
