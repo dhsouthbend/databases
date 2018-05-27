@@ -34,7 +34,7 @@ cursor.execute("""INSERT INTO programs (program_name) VALUES
 ("Anthropology"),
 ("Biology"),
 ("Linguistics")
-)""")
+);""")
 
 conn.commit()
 
@@ -44,6 +44,5 @@ print(cursor.fetchall())
 ```
 
 Run `insert.py`. If you see the programs we added to the database, it worked!
-
 
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)

@@ -1,7 +1,5 @@
-FULL-nypl_items.csv
-nyplitems-cleaner.py
-.DS_Store
-*.pyc
+*~
 *#
-—*
 .#*
+*.dnc
+__pycache__ 

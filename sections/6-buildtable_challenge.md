@@ -1,13 +1,13 @@
 [<<< Back](5-foreignkeys.md) - [Next >>>](7-commonqueries.md)  
 
-# Challenge: Build a table for GPA!
+# Challenge: build a table for GPA!
 
 Let's imagine that we want to connect each student to their GPA. How can we do this?
 
 Things to consider:
 
 - Where will we put the GPAs?
-- What kind data type will they be?
+- What kind of data type will they be?
 - How will we connect each GPA to the correct student?
 
 ## Solution 
@@ -21,7 +21,7 @@ CREATE TABLE gpas (
 	id_student INTEGER,
 	FOREIGN KEY (id_student) REFERENCES students(id)
 );
-```  
+```
 
 ### Populate the GPA Table with GPA Score and Foreign Key
 

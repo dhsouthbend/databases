@@ -1,8 +1,8 @@
 [<<< Back](4-updatefield.md) - [Next >>>](6-buildtable_challenge.md)
 
-# Relating Tables with Foreign Keys
+# Relating tables with foreign keys
 
-At this point, we're going to create a second table called "students" to illustrate the relational nature of relational databases. We use the same syntax that we used to create the "programs" table, but with one extra element: *a foreign key*. Let's work in a new file that we call `students.py`.
+At this point, we're going to create a second table called "students" to illustrate the relational nature of relational databases. We use the same syntax that we used to create the `programs` table, but with one extra element: *a foreign key*. Let's work in a new file that we call `students.py`.
 
 As before, create a connection to the "firstdb.db" database:
 
@@ -40,7 +40,8 @@ sql = """CREATE TABLE students (
 	student VARCHAR,
 	id_program INTEGER,
 	FOREIGN KEY (id_program) REFERENCES programs(id)
-)"""
+);
+"""
 
 cursor.execute(sql)
 
