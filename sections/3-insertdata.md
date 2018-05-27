@@ -1,16 +1,16 @@
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
 
-# Inserting Data into an SQL Table
+# Inserting data into an SQL table
 
 Now that we have a table structure, we can insert some data. We need to create a new file for our next steps. Call it `insert.py`.
 
 The syntax for inserting multiple records is:
 
 ```sql
-INSERT INTO table_name (field_name) VALUES (record1), (record2), (record3)
+INSERT INTO table_name (field_name) VALUES (record1), (record2), (record3);
 ```
 
-Insert "Anthropology", "Biology", and "Linguistics" into the table we just created. Here is the SQL we need:
+Insert `Anthropology`, `Biology`, and `Linguistics` into the table we just created. Here is the SQL we need:
 
 ```sql
 INSERT INTO programs (program_name) VALUES
@@ -25,7 +25,7 @@ In `insert.py`, add these lines:
 # import sqlite library
 import sqlite3
 
-"""Make a connection to the 'firstdb.db' database."""
+# Make a connection to the 'firstdb.db' database.
 conn = sqlite3.connect("firstdb.db")
 cursor = conn.cursor()
 
