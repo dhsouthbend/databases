@@ -5,19 +5,12 @@ import sqlite3
 conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
-sql = """CREATE TABLE students (
-    id INTEGER PRIMARY KEY,
-    student VARCHAR,
-    id_program INTEGER,
-    FOREIGN KEY (id_program) REFERENCES programs(id)
-)"""
+sql = """UPDATE programs
+SET program_level = 'Master''s'
+WHERE program_name IN ('Anthropology', 'Biology')"""
 cursor.execute(sql)
 
-conn.commit()
 
-
-
-# CHALLENGE
 sql = """INSERT INTO students(student, id_program) VALUES
 ('Josefina', 3),
 ('Cecilia', 2),

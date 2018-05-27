@@ -20,7 +20,7 @@ Create a connection to our database:
 import sqlite3
 
 # create a database and make a connection.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 ```
 

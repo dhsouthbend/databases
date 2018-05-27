@@ -4,14 +4,14 @@
 
 At this point, we're going to create a second table called "students" to illustrate the relational nature of relational databases. We use the same syntax that we used to create the `programs` table, but with one extra element: *a foreign key*. Let's work in a new file that we call `students.py`.
 
-As before, create a connection to the "firstdb.db" database:
+As before, create a connection to the "first.db" database:
 
 ```python
 # import sqlite library
 import sqlite3
 
 # create a database and make a connection.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 ```
 
@@ -32,7 +32,7 @@ Then our Python file should look like this:
 import sqlite3
 
 # create a database and make a connection.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
 sql = """CREATE TABLE students (

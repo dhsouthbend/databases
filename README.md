@@ -2,7 +2,14 @@
 
 A database is a collection of data that is structured to allow for manipulation. This session will introduce one type of database, the relational database, using SQLite, a portable implementation often used in mobile phones and distributed systems.
 
-After completing this session, attendees will be able to create tables and insert, read, and delete data in an SQLite database using Python and SQL statements.
+### Learning Objectives
+
+After completing this session, attendees will be able to: 
+- Create database tables in an SQLite database using Python and SQL statements
+- Insert, read, and delete data 
+- Understand the beginning of cleaning/tidying data
+
+### Table of Contents
 
 [Introduction to databases](sections/0-dbintro.md)  
 [Building a database](sections/1-builddb.md)  

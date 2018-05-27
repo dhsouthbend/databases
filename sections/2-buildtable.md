@@ -69,7 +69,6 @@ cursor.execute("""CREATE TABLE programs  (
 conn.commit()
 ```
 
-So now WHAT??????
 
 
 [<<< Back](1-builddb.md) - [Next >>>](3-insertdata.md)

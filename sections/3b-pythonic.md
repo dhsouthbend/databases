@@ -7,7 +7,7 @@ We've been using pure SQL in our scripts so far. Ah, but there's a more pythonic
 import sqlite3
 
 # create a database and make a connection.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
 sql = """CREATE TABLE boardgames (
