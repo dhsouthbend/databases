@@ -24,11 +24,11 @@ import sqlite3
 # This command will create a new database if it doesn't already exist.
 conn = sqlite3.connect("firstdb.db")
 
-# create a cursor
+# Create a cursor
 cursor = conn.cursor()
 ```
 
-Notice that this time we also created a "cursor" object for the database. This allows us to traverse the database records, to search through and change them.
+Notice that this time we also created a "cursor" object for the database. This allows us to traverse the database records to search through and change them.
 
 Next, create a table to store data about academic programs. Name the table "programs" and give it two fields (aka, columns): one for `id`, the other for `program_name`.
 
