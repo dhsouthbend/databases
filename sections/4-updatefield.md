@@ -10,8 +10,7 @@ You can alter tables after they've been created. The SQL syntax below adds anoth
 ALTER TABLE programs    --selects the "programs" table to update
 ADD program_level VARCHAR;    --adds a "program_level" column, which is a string
 ```
-
-XXX Put an explanation of SQL comments in here XXX
+By the way, in the example above, the words after the '--' symbols are comments, and don't affect the query.
 
 Create a connection to our database:
 

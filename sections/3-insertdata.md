@@ -42,6 +42,7 @@ conn.commit()
 
 # print out our table
 cursor.execute("SELECT * FROM programs")
+# the 'fetchall()' function will return all of the results of a query
 print(cursor.fetchall())
 ```
 

@@ -1,5 +1,6 @@
 [<<< Back](3-insertdata.md) - [Next >>>](4-updatefield.md)
 
+# A more readable approach
 We've been using pure SQL in our scripts so far. Ah, but there's a more pythonic way of accomplishing our goal. Consider the script below:
 
 ```python
