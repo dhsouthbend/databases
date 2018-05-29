@@ -1,12 +1,12 @@
 [<<< Back](9-datasets.md) - [Next >>>](10-usefulqueries.md)
 
-# What Makes a Good Dataset / Cleaning Data
+# What makes a good dataset / cleaning data
 
 Given a dataset that we want to use, how do we know that we can trust it to tell us what we want to learn? Of course, we have to ask the right questions--those that are possible for the dataset to answer. But we also have to test the integrity and consistency of the dataset. We have to make sure that the dataset is not incomplete, or messy, or liable to mislead us when we attempt to analyze it. Indeed, data scientists and engineers often spend the lion’s share of their time on various forms of “data cleaning” and much less on the “fun” part of the job.
 
 There are many different levels to this kind of work and ways to prepare data for analysis, from checking for outliers in your data, to parsing dates, to determining the correct values in missing data.
 
-# Cleansing Data
+# Cleansing data
 
 At one level, cleaning data means ensuring accuracy and consistency of individual entries--each cell in a row of a table.
 
@@ -26,7 +26,7 @@ Performing basic descriptive statistics on a dataset can also help to flag extre
 
 It is essential to create unique numerical identifiers for a dataset (eg, using column A of a spreadsheet for consecutive ID numbers), so that, after sorting and re-sorting, the dataset can be restored to its original order with ease and certainty.
 
-# Tidying Data
+# Tidying data
 
 In addition to “cleansing” a dataset of typos, inconsistencies, etc., a process called “tidying” is employed to correct its formatting. This is more involved and complicated than it might at first appear.
 

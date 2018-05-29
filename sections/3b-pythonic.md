@@ -32,6 +32,6 @@ cursor.executemany("INSERT INTO albums VALUES (?,?,?)", boardgames)
 conn.commit()
 ```
 
-What might be the advantage of such an approach? XXX Add longer explanation here? XXX
+What might be the advantage of such an approach? It is cleaner, and after a bit of practice with Python, easier to read. Being more compact, it is easier to take in with one glance.
 
 [<<< Back](3-insertdata.md) - [Next >>>](4-updatefield.md)
