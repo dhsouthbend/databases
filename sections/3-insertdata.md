@@ -2,7 +2,7 @@
 
 # Inserting data into an SQL table
 
-Now that we have a table structure, we can insert some data. We need to create a new file for our next steps. Call it `insert.py`.
+Now that we have a table structure, we can insert some data. Let's make a table of departments in a school. We need to create a new file for our next steps. Call it `insert.py`.
 
 The syntax for inserting multiple records is:
 
@@ -45,7 +45,6 @@ cursor.execute("SELECT * FROM programs")
 # the 'fetchall()' function will return all of the results of a query
 print(cursor.fetchall())
 ```
-
-Run `insert.py`. If you see the programs we added to the database, it worked!
+Run `insert.py`. If you see the programs we added to the database, it worked! 
 
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
