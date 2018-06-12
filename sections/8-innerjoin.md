@@ -11,17 +11,19 @@ sql = """SELECT *
 FROM students INNER JOIN programs
 ON students.id_program = programs.id"""
 
-cursor.execute(sql)
-
 # Print results
-print(cursor.fetchall())
+print(pandas.read_sql_query(sql, conn))
+```
+This query should return what you see below:
+```
+   id   student  id_program  id  program_name program_level
+0   1  Josefina           3   3   Linguistics          None
+1   2   Cecilia           2   2       Biology      Master's
+2   3      Nico           2   2       Biology      Master's
+3   4     Sarah           1   1  Anthropology      Master's
 ```
 
-This query should return what you see below:
-
-```[(1, 'Josefina', 3, 3, 'Linguistics', 'Ph.D.'), (2, 'Cecilia', 2, 2, 'Biology', "Master's"), (3, 'Nico', 2, 2, 'Biology', "Master's"), (4, 'Sarah', 1, 1, 'Anthropology', "Master's"), (5, 'Josefina', 3, 3, 'Linguistics', 'Ph.D.'), (6, 'Cecilia', 2, 2, 'Biology', "Master's"), (7, 'Nico', 2, 2, 'Biology', "Master's"), (8, 'Sarah', 1, 1, 'Anthropology', "Master's")]```
-
-This query demonstrates the power of relational databases by using the foreign key in the "students" table to coordinating data with the "programs" table.
+This query demonstrates the power of relational databases by using the foreign key in the "students" table to coordinate data with the "programs" table.
 
 ### Challenge One
 
