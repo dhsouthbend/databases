@@ -16,7 +16,6 @@ When you are in the REPL, type:
 import sqlite3
 import pandas
 conn = sqlite3.connect("first.db")
-cursor = conn.cursor()
 ```
 
 This connects us to our database and imports the libraries we need. So, now we can play around with querying our data.
@@ -36,8 +35,6 @@ Practice executing these queries and see what they return.
 ```python
 # Query all fields for each record in the table "students"
 sql = "SELECT * FROM students;"
-cursor.execute(sql)
-
 # Print results
 print(pandas.read_sql_query(sql, conn))
 ```
@@ -46,7 +43,6 @@ print(pandas.read_sql_query(sql, conn))
 
 ```python
 sql = "SELECT student FROM students;"
-cursor.execute(sql)
 # print results
 print(pandas.read_sql_query(sql, conn))
 ```
@@ -55,14 +51,13 @@ print(pandas.read_sql_query(sql, conn))
 
 ```python
 sql = "SELECT student, id FROM students;"
-cursor.execute(sql)
 # print results
 print(pandas.read_sql_query(sql, conn))
 ```
 
 ### Challenge
 
-Write a query that returns `program_name` and `program_level` for each record in the `programs` table. A solution is [here](solution3.py).
+Write a query that returns `program_name` and `program_level` for each record in the `programs` table. A solution is [here](solution3.sql).
 
 In the following query, `WHERE` filters the records by their value in the "id" field:
 
@@ -70,8 +65,6 @@ In the following query, `WHERE` filters the records by their value in the "id" f
 # Show all fields for each record in the table 'students' 
 # where the value of the 'id' field is equal to '3'
 sql = "SELECT * FROM students WHERE id = '3'"
-cursor.execute(sql)
-
 # Print results
 print(pandas.read_sql_query(sql, conn))
 ```
