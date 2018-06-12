@@ -58,7 +58,7 @@ import sqlite3
 
 # Create a database and make a connection. 
 # This command will create a new database if it doesn't already exist.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 
 # create a table inside our database

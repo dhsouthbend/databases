@@ -4,7 +4,7 @@
 
 Let's create a database table from an [existing csv file](https://github.com/GCDigitalFellows/nypl_data/blob/master/nypl_items.csv).
 
-We're going to use the Pandas library to import our data. Pandas is a data analysis library used in many situations.
+We're going to use the Pandas library to import our data.
 
 ```python
 import pandas

@@ -26,7 +26,7 @@ In `insert.py`, add these lines:
 import sqlite3
 
 # Make a connection to the 'firstdb.db' database.
-conn = sqlite3.connect("firstdb.db")
+conn = sqlite3.connect("first.db")
 
 cursor = conn.cursor()
 

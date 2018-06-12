@@ -2,7 +2,9 @@
 
 # Querying your database
 
-Now that we have a decent-looking database, we can execute some queries to manipulate our data. For this section, we will be using the Python REPL, which allows you to interact with Python by entering one line of code at a time. At the command line, navigate to the directory where you are keeping the "firstdb.db" database, and type:
+Now that we have a decent-looking database, we can execute some queries to manipulate our data. For this section, we will be using the Python REPL, which allows you to interact with Python by entering one line of code at a time. We're also introducing a new library: Pandas. Pandas is a data analysis library used in many applications.
+
+At the command line, navigate to the directory where you are keeping the "first.db" database, and type:
 
 ```
 python
@@ -12,11 +14,12 @@ When you are in the REPL, type:
 
 ```python
 import sqlite3
+import pandas
 conn = sqlite3.connect("first.db")
 cursor = conn.cursor()
 ```
 
-This connects us to our database. So, now we can play around with querying our data.
+This connects us to our database and imports the libraries we need. So, now we can play around with querying our data.
 
 Each query is made up of the same basic set of clauses:
 
@@ -36,7 +39,7 @@ sql = "SELECT * FROM students;"
 cursor.execute(sql)
 
 # Print results
-print(cursor.fetchall())
+print(pandas.read_sql_query(sql, conn))
 ```
 
 2. This query returns only the values in the "student" field for all records in the `students` table:
@@ -45,7 +48,7 @@ print(cursor.fetchall())
 sql = "SELECT student FROM students;"
 cursor.execute(sql)
 # print results
-print(cursor.fetchall())
+print(pandas.read_sql_query(sql, conn))
 ```
 
 3. This query returns two fields from the "students" table:
@@ -54,7 +57,7 @@ print(cursor.fetchall())
 sql = "SELECT student, id FROM students;"
 cursor.execute(sql)
 # print results
-print(cursor.fetchall())
+print(pandas.read_sql_query(sql, conn))
 ```
 
 ### Challenge
@@ -70,7 +73,7 @@ sql = "SELECT * FROM students WHERE id = '3'"
 cursor.execute(sql)
 
 # Print results
-print(cursor.fetchall())
+print(pandas.read_sql_query(sql, conn))
 ```
 
 ### Challenge

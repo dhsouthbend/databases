@@ -33,7 +33,7 @@ import sqlite3
 conn = sqlite3.connect("first.db")
 ```
 
-Save the file with `Control-s` on Windows or `⌘-s` on Mac.
+Save the file with `Control-s` on Windows or `⌘-s` on Mac. Let's call it  `createdb.py`.
 
 Back on the command line, enter this command to run the script:
 

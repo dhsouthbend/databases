@@ -28,7 +28,7 @@ boardgames = [('Settlers of Catan', 3, 5),
           ('Diplomacy', 2, 4),
           ]
 
-cursor.executemany("INSERT INTO albums VALUES (?,?,?)", boardgames)
+cursor.executemany("INSERT INTO boardgames VALUES (?,?,?)", boardgames)
 conn.commit()
 ```
 
