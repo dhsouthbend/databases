@@ -11,7 +11,7 @@ import pandas
 import sqlite3
 
 # make the connection
-conn = sqlite3.connect('db.sqlite')
+conn = sqlite3.connect('nypldb.db')
 
 # have Pandas read our CSV
 df = pandas.read_csv('nypl_items.csv', low_memory=False)
