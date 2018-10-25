@@ -4,15 +4,12 @@
 
 Each of the queries up to now has just returned data from a single table in the database. This final query combines our "students" and "programs" tables using the `INNER JOIN` and `ON` clause:
 
-```python
+```sql
 # Show all the records for students with information 
 # about their respective programs
 sql = """SELECT *
 FROM students INNER JOIN programs
 ON students.id_program = programs.id"""
-
-# Print results
-print(pandas.read_sql_query(sql, conn))
 ```
 This query should return what you see below:
 ```
