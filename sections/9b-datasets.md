@@ -47,5 +47,5 @@ Most of these “messiness” issues can be solved with the following tools:
 - String splitting
 - Casting
 
-[<<< Back](9-datasets.md) - [Next >>>](10-usefulqueries.md)
+[<<< Back](9-importcsv.md) - [Next >>>](10-usefulqueries.md)
 
