@@ -14,6 +14,6 @@ We’re going to use SQLite in this session because getting set up requires less
 
 ### How do I use SQL?
 
-The database holds your data, but you need some way to interact with the database. We will be using a few Python libraries to do this. SQLite also has a [command line utility](http://www.sqlite.org/cli.html), which we will not use today.
+The database holds your data, but you need some way to interact with the database. We will be using a [command line utility](http://www.sqlite.org/cli.html).
 
 [<<< Back](../README.md) - [Next >>>](1-builddb.md)
