@@ -2,7 +2,7 @@
 
 # Inserting data into an SQL table
 
-Now that we have a table structure, we can insert some data. Let's make a table of departments in a school. We need to create a new file for our next steps. Call it `insert.py`.
+Now that we have a table structure, we can insert some data. Let's make a table of departments in a school.
 
 The syntax for inserting multiple records is:
 
@@ -19,32 +19,15 @@ INSERT INTO programs (program_name) VALUES
 ("Linguistics");
 ```
 
-In `insert.py`, add these lines:
-
-```python
-# import sqlite library
-import sqlite3
-
-# Make a connection to the 'firstdb.db' database.
-conn = sqlite3.connect("first.db")
-
-cursor = conn.cursor()
-
-# insert multiple values into our 'programs' table
-cursor.execute("""INSERT INTO programs (program_name) VALUES
-
-('Anthropology'),
-('Biology'),
-('Linguistics');
-""")
-
-conn.commit()
-
-# print out our table
-cursor.execute("SELECT * FROM programs")
-# the 'fetchall()' function will return all of the results of a query
-print(cursor.fetchall())
+Execute that code in the SQLite REPL. Now you have a database table with data in it! But it's all rather abstract without visible evidence, isn't it? In order to visualize our data, we need to change some settings in the SQLite program:
+```sql
+ .mode column
+ .headers on
 ```
-Run `insert.py`. If you see the programs we added to the database, it worked! 
+Now add this code:
+```sql
+select * from programs;
+```
+If you see the programs we added to the database, it worked! 
 
 [<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
