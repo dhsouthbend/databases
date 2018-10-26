@@ -20,6 +20,14 @@ SET program_level = "Ph.D."		--select the field and value to update
 WHERE program_name = 'Linguistics';		--select the condition for updating
 ```
 
+And now we have:
+```
+id          program_name  program_level
+----------  ------------  -------------
+1           Anthropology
+2           Biology
+3           Linguistics   Ph.D.
+```
 ### Challenge
 
 Update the `program_level` field for `Biology` and `Anthropology` with `Master's`.
