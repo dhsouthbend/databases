@@ -28,6 +28,15 @@ Now add this code:
 ```sql
 select * from programs;
 ```
+Here is the shape of our table:
+
+```
+id          program_name
+----------  ------------
+1           Anthropology
+2           Biology
+3           Linguistics
+```
 If you see the programs we added to the database, it worked! 
 
 [<<< Back](2-buildtable.md) - [Next >>>](3-updatefield.md)
