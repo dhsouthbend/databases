@@ -7,17 +7,18 @@ Each of the queries up to now has just returned data from a single table in the 
 ```sql
 # Show all the records for students with information 
 # about their respective programs
-sql = """SELECT *
-FROM students INNER JOIN programs
-ON students.id_program = programs.id"""
+SELECT *
+FROM students INNER JOIN programs 
+ON students.id_program = programs.id;
 ```
 This query should return what you see below:
 ```
-   id   student  id_program  id  program_name program_level
-0   1  Josefina           3   3   Linguistics          None
-1   2   Cecilia           2   2       Biology      Master's
-2   3      Nico           2   2       Biology      Master's
-3   4     Sarah           1   1  Anthropology      Master's
+id          student     id_program  id          program_name  program_level
+----------  ----------  ----------  ----------  ------------  -------------
+1           Josefina    3           3           Linguistics   Ph.D.
+2           Cecilia     2           2           Biology       Master's
+3           Nico        2           2           Biology       Master's
+4           Sarah       1           1           Anthropology  Master's
 ```
 
 This query demonstrates the power of relational databases by using the foreign key in the "students" table to coordinate data with the "programs" table.
