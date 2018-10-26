@@ -2,6 +2,17 @@
 
 # Challenge: build a table for GPA!
 
+Now we have a student table that looks something like this:
+
+```
+id          student     id_program
+----------  ----------  ----------
+1           Josefina    3
+2           Cecilia     2
+3           Nico        2
+4           Sarah       1
+```
+
 Let's imagine that we want to connect each student to their GPA. How can we do this?
 
 Things to consider:
@@ -31,6 +42,16 @@ INSERT INTO gpas (gpa, id_student) VALUES
 	(3.9, 1),
 	(1.23, 3),
 	(4.0, 4);
+```
+
+And thus our table for GPAS looks like:
+```
+id          gpa         id_student
+----------  ----------  ----------
+1           2.67        2
+2           3.9         1
+3           1.23        3
+4           4.0         4
 ```
 
 [<<< Back](5-foreignkeys.md) - [Next >>>](7-commonqueries.md)  
