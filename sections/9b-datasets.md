@@ -2,13 +2,13 @@
 
 # What makes a good dataset / cleaning data
 
-Given a dataset that we want to use, how do we know that we can trust it to tell us what we want to learn? Of course, we have to ask the right questions--those that are possible for the dataset to answer. But we also have to test the integrity and consistency of the dataset. We have to make sure that the dataset is not incomplete, or messy, or liable to mislead us when we attempt to analyze it. Indeed, data scientists and engineers often spend the lion’s share of their time on various forms of “data cleaning” and much less on the “fun” part of the job.
+Given a dataset that we want to use, how do we know that we can trust it to tell us what we want to learn? Of course, we have to ask the right questions---those that are possible for the dataset to answer. But we also have to test the integrity and consistency of the dataset. We have to make sure that the dataset is not incomplete, or messy, or liable to mislead us when we attempt to analyze it. Indeed, data scientists and engineers often spend the lion’s share of their time on various forms of “data cleaning” and much less on the “fun” part of the job.
 
 There are many different levels to this kind of work and ways to prepare data for analysis, from checking for outliers in your data, to parsing dates, to determining the correct values in missing data.
 
 # Cleansing data
 
-At one level, cleaning data means ensuring accuracy and consistency of individual entries--each cell in a row of a table.
+At one level, cleaning data means ensuring accuracy and consistency of individual entries---each cell in a row of a table.
 
 This can take the form of:
 - ensuring consistent nomenclature
