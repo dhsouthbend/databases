@@ -2,7 +2,9 @@
 
 # Import data into table
 
-Let's create a database table from an [existing csv file](https://github.com/GCDigitalFellows/nypl_data/blob/master/nypl_items.csv).
+Now we are moving back into the world of Python! Let's create a new file in the `database-practice` directory.
+
+Our goal is to create a database table from an [existing csv file](https://github.com/GCDigitalFellows/nypl_data/blob/master/nypl_items.csv). Click the link, then right-click the `Download` button on that page, and click `save link as` to get the csv we want. Move the csv file to your `database-practice` directory.
 
 We're going to use the Pandas library to import our data.
 
