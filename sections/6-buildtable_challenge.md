@@ -28,7 +28,7 @@ Things to consider:
 ```sql
 CREATE TABLE gpas (
 	id INTEGER PRIMARY KEY,
-	gpa DOUBLE,
+	gpa DOUBLE PRECISION,
 	id_student INTEGER,
 	FOREIGN KEY (id_student) REFERENCES students(id)
 );
