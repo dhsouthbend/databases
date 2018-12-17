@@ -34,7 +34,7 @@ CREATE TABLE gpas (
 );
 ```
 
-You may notice a new term in the above example. `DOUBLE` is just a number that can have a decimal point.
+You may notice a new term in the above example. `DOUBLE PRECISION` is just a number that can have a decimal point.
 
 ### Populate the GPA Table with GPA Score and Foreign Key
 
