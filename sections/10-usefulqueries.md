@@ -2,7 +2,13 @@
 
 # Querying to summarize your data
 
-Using the REPL, let's see what the nypl_items table looks like:
+Using the SQLITE REPL, let's see what the nypl_items table looks like. To load the database, first confirm that you are in the `database-practice` directory. Start the Sqlite program:
+
+`sqlite3`
+
+Then, type this text to open our database:
+
+`.open nyplbd.db`
 
 1. How many records are in the table?
 
