@@ -25,9 +25,8 @@ CREATE TABLE programs  (
 	program_name VARCHAR
 );
 ```
-Remember, you can press `enter` at any time to start a new line, without executing the code. a `;` is necessary to finish a line of SQL. SQLite is not case-sensitive.
+Remember, you can press `enter` at any time to start a new line, without executing the code. A `;` is necessary to finish a line of SQL. SQLite is not case-sensitive. Press `enter` after the `;` to create this table in your SQLite database.
 
-Press enter to create this table in your SQLite database. A table is most useful when it represents a category of object you are tracking. A record in a table is one instance of that category, i.e. a book in a collection of books, or a person in a list of people. Each field is an aspect of that record, like the author of a book, or the age of a person. This will become clearer as we continue.
-
+A table is most useful when it represents a category of object you are tracking. A record in a table is one instance of that category, i.e. a book in a collection of books, or a person in a list of people. Each field is an aspect of that record, like the author of a book, or the age of a person. This will become clearer as we continue.
 
 [<<< Back](1-builddb.md) - [Next >>>](3-insertdata.md)
