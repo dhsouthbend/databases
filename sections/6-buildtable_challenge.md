@@ -28,11 +28,13 @@ Things to consider:
 ```sql
 CREATE TABLE gpas (
 	id INTEGER PRIMARY KEY,
-	gpa DOUBLE PRECISION,
+	gpa FLOAT,
 	id_student INTEGER,
 	FOREIGN KEY (id_student) REFERENCES students(id)
 );
 ```
+
+You may notice a new term in the above example. `FLOAT` is just a number that can have a decimal point.
 
 ### Populate the GPA Table with GPA Score and Foreign Key
 
