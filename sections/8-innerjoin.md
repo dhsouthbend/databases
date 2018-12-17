@@ -29,7 +29,7 @@ Write a query that returns only the name of each student and their respective pr
 
 ### Challenge Two
 
-Write a query that returns the name of each student, their program name, and their GPA with results sorted by GPA from low to high. You can find a solution [here](solution6.sql).
+Write a query that returns the name of each student, their program name, and their GPA with results sorted by GPA from low to high. You will likely need to do some Googling, or you can find a solution [here](solution6.sql).
 
 *How can you make sure that the data from 'gpas', 'students', and 'programs' is aligning correctly?*
 
