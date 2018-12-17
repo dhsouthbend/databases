@@ -55,4 +55,4 @@ And now we have "Physics" in place of "Linguistics".
 
 As we go through this tutorial, keep these `delete` and `update` commands in mind. But if you find your database has reached a state of complete confusion, don't be afraid of starting over! 
 
-[<<< Back](2-buildtable.md) - [Next >>>](3-updatefield.md)
+[<<< Back](2-buildtable.md) - [Next >>>](3b-pythonic.md)
