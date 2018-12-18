@@ -2,7 +2,7 @@
 
 # Challenge: Find out more about what's in nypl_items
 
-## Take 5 minutes to explore the nypl_items--what can you tell us about it?  
+## Take 5 minutes to explore the nypl_items&mdashwhat can you tell us about it?  
 
 - How many publishers are there? How many unique publishers?
 - What is the oldest item?
