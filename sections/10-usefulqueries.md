@@ -8,7 +8,7 @@ Using the SQLITE REPL, let's see what the nypl_items table looks like. To load t
 
 Then, type this text to open our database:
 
-`.open nyplbd.db`
+`.open file:nyplbd.db`
 
 1. How many records are in the table?
 
