@@ -29,4 +29,10 @@ In your program, type this code:
 
 Congratulations! You've successfully created and accessed your database on the command line. This is an excellent first step toward performing data analysis on large data sets or creating your own applications!
 
+By the way, if you ever want to quit out of sqlite, the command is:
+
+```sqlite
+.quit
+```
+
 [<<< Back](0-dbintro.md) - [Next >>>](2-buildtable.md)
