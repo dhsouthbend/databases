@@ -2,15 +2,15 @@
 
 # Building a database
 
-To get started, we're going to use the `sqlite` library to create the database file we will be using during this session.
+To get started, we're going to use the `sqlite` tool to create the database file we will be using during this session.
 
-In these sesssions, we've been placing files in a `projects` folder on our desktop. Let's create a folder for this session on databases. These commands will also create the `projects` folder if you don't already have it.
+In these sesssions, we've been placing files in a `projects` folder on our desktop. Let's create a folder for this session on databases. 
 
-Open your command line and enter these commands:
+Go to the `projects` directory in your command line and enter these commands:
 
 ```bash
-mkdir -p ~/Desktop/projects/database-practice
-cd ~/Desktop/projects/database-practice
+mkdir database-practice
+cd database-practice
 ```
 
 This will create a new folder for this session and also move into it using the `cd` command.
