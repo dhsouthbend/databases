@@ -30,7 +30,7 @@ After completing this session, attendees will be able to:
 
 -----
 
-Session Leader: Stephen Zweibel  
+Session Leader: Ericka Christie  
 Based on previous work by Stephen Zweibel and Ian Phillips
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
